@@ -1,0 +1,161 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./248763926_417724443124638_8812763383412410382_n.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.fa-hat-cowboy{
+    height: 200px;
+    padding: 100px 650px;
+    transform: rotate(-30deg);
+}
+
+p{
+    margin: -130px 700px;
+    font-size:x-large;
+    animation-name: move 2s infinite;
+    
+}
+
+
+
+@keyframes move {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+.one{
+    color: gold;
+    transform: translate(20px, 85px) rotate(-30deg);
+}
+.two{
+    color:red;
+    transform: translate(13px, 60px) rotate(-25deg);
+}
+.three{
+    color: brown;
+    transform: translate(6px, 40px) rotate(-20deg);
+}
+.four{
+    color: blue;
+    transform: translate(3px, 23px) rotate(-15deg);
+}
+
+.left_cake{
+position: absolute;
+content: url(./birthday-cake-solid.svg);
+transform: rotate(45deg);
+/*background-color: rgba(0, 0 , 0 , 0.6);*/
+height: 200px;
+fill: gold;
+mask-image: url(./birthday-cake-solid.svg);
+background-color: gold;
+animation-name: cube;
+animation-duration: 0.9s;
+animation-delay: 0.5s;
+animation-fill-mode: backwards;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes cube {
+	0% {
+		top: 0;
+		right:0;
+		transform: rotate(0deg);
+		background-color: cornflowerblue;
+	}
+	20%{
+		top: 50px;
+		right: 50px;
+		transform: rotate(-45deg);
+		background-color: aqua;
+	}
+	40%{
+		top: 100px;
+		right: 100px;
+		transform: rotate(90deg);
+		background-color: gold;
+	}
+	60%{
+		top: 150px;
+		right: 150px;
+		transform: rotate(180deg);
+		background-color: yellow;
+	}
+	80%{
+		top: 200px;
+		right: 200px;
+		transform: rotate(-270deg);
+		background-color: purple;
+	}
+	100%{
+		top: 250px;
+		right: 250px;
+		transform: rotate(-360deg);
+		background-color: green;
+	}
+}
+
+
+.right_cake{
+    position: absolute;
+    content: url(./birthday-cake-solid2.svg);
+    height: 200px;
+    fill: red;
+    background-color: red;
+    transform: rotate(45deg);
+    margin: 0 1700px;
+    animation-name: cube1;
+    animation-duration: 0.9s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+
+
+    @keyframes cube1 {
+        0% {
+            top: 0;
+            right:0;
+            transform: rotate(0deg);
+            background-color: black;
+        }
+        20%{
+            top: 50px;
+            right: -50px;
+            transform: rotate(45deg);
+            background-color: aqua;
+        }
+        40%{
+            top: 100px;
+            right: -100px;
+            transform: rotate(90deg);
+            background-color: white;
+        }
+        60%{
+            top: 150px;
+            right: -150px;
+            transform: rotate(180deg);
+            background-color: yellow;
+        }
+        80%{
+            top: 200px;
+            right: -200px;
+            transform: rotate(270deg);
+            background-color: purple;
+        }
+        100%{
+            top: 250px;
+            right: -250px;
+            transform: rotate(360deg);
+            background-color: green;
+        }
+    }
